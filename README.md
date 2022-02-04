@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+<br>
+IDinheiro Challenge
+</h1>
 
-## Getting Started
+<p align="center">Application built for answer company challenge</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
+<div>
+  <img src="repo/imgs/image1.png" alt="demo" height="425">
+</div>
+
+<hr />
+
+## What was used
+
+- Next.js
+- Typescript
+- Incremental Static Generation
+- Styled components
+- Jest
+- Axios
+- Clean architecture
+- Eslint
+- Prettier
+
+## Features
+
+- List comic characters.
+- Search comic characters.
+- Detail comic character.
+
+## How to download dependencies
+
+```
+  yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## How to run
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+First of all, create a file .env.local and copy content in env.local.example adding your own API token.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+  yarn dev
+```
 
-## Learn More
+## How to test Static Generation
 
-To learn more about Next.js, take a look at the following resources:
+```
+  yarn build && yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to execute tests
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+  yarn test
+```
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Created with passion by me 👨🏻‍💻
