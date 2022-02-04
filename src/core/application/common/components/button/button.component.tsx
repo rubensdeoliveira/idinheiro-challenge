@@ -8,7 +8,7 @@ export function Button({
   ...rest
 }: ButtonProps) {
   return (
-    <Container buttonType={buttonType} {...rest}>
+    <Container data-testid="button-container" buttonType={buttonType} {...rest}>
       {label ?? children}
     </Container>
   )
