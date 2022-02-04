@@ -1,1 +1,1 @@
-export * from './render-with-providers.helper'
+export * from './render-with-providers'

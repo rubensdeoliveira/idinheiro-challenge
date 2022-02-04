@@ -42,11 +42,16 @@ export function CharactersGrid({
     if (loadingCharacters) {
       return <Loading />
     }
-    if ((!characters || characters.number_of_page_results === 0) && search) {
+    if (!characters || characters.number_of_page_results === 0) {
       return (
         <>
-          <p>A sua pesquisa nāo retornou resultados</p>
+          <p data-testid="characters-grid-empty-list-text">
+            {search
+              ? 'A sua pesquisa nāo retornou resultados'
+              : 'Nāo há personagens para serem exibidos'}
+          </p>
           <Button
+            data-testid="characters-grid-back-button"
             buttonType={ButtonType.Text}
             label="Voltar"
             onClick={router.back}
@@ -71,7 +76,7 @@ export function CharactersGrid({
   }, [characters, search, loadingCharacters, currentPage])
 
   return (
-    <CharactersGridContainer>
+    <CharactersGridContainer data-testid="characters-grid-container">
       {handleCharactersGridContent}
     </CharactersGridContainer>
   )

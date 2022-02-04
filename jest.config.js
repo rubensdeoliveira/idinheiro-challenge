@@ -1,9 +1,22 @@
 module.exports = {
   collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
-    '!**/*.d.ts',
-    '!**/node_modules/**',
+    '<rootDir>/src/**/*.{ts,tsx}',
+    '!**/mocks/**',
+    '!**/my-icons/**',
+    '!**/index.{ts,tsx}',
+    '!**/**.error.{ts,tsx}',
+    '!**/**.factory.{ts,tsx}',
+    '!**/**.styles.ts',
+    '!**/**.constants.{ts,tsx}',
+    '!**/**.helper.{ts,tsx}',
+    '!**/**.model.ts',
+    '!**/**.contract.ts',
+    '!**/**.dto.ts',
+    '!<rootDir>/src/core/application/common/styles/global.ts',
+    '!<rootDir>/src/pages/_app.tsx',
+    '!<rootDir>/src/pages/_document.tsx'
   ],
+  setupFilesAfterEnv: ['<rootDir>/src/core/main/config/jest-setup.ts'],
   moduleNameMapper: {
     '@/(.*)': '<rootDir>/src/$1',
     '\\.styles.ts$': 'identity-obj-proxy'

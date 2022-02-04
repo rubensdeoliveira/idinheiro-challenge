@@ -6,7 +6,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --passWithNoTests --no-cache --noStackTrace --runInBand",
+    "test:ci": "npm run test -- --coverage",
+    "test:staged": "npm run test -- --silent",
+    "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
     "axios": "^0.25.0",
